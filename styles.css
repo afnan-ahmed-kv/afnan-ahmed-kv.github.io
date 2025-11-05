@@ -382,11 +382,22 @@ body {
 }
 
 .profile-image {
-  font-size: 4rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform, color;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .profile-card:hover .profile-image {
@@ -554,6 +565,13 @@ body {
   justify-content: center;
   font-size: 4rem;
   color: white;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Skills Section */
